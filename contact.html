@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Barbershop</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><img id="logo1" src="./imagenes/logo1.png"></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form>
+
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="input-patron" placeholder="Pepito Perez" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-patron" placeholder="example@domain.com" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" class="input-patron" placeholder="(57) 123 1234 12345" required>
+
+            <label for="message">Mensaje</label>
+            <textarea id="message" cols="63" rows="10" class="input-patron" required></textarea>
+
+            <fieldset>
+                <legend>¿Cómo le gustaría que le contactemos?</legend>
+                <label for="radio-email"><input type="radio" id="radio-email" name="contact" value="email" checked/>Email</label>
+                
+                <label for="radio-telefono"><input type="radio" id="radio-telefono" name="contact" value="telefono">Teléfono</label>
+                
+                <label for="radio-whatsapp"><input type="radio" id="radio-whatsapp" name="contact" value="whatsapp">WhatsApp</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>¿En cuál horario prefiere ser atendido?</legend>
+                <select>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+
+
+            <label class="checkbox"><input type="checkbox" checked>Le gustaría recibir novedades?</label>
+
+            <input type="submit" value="Enviar formulario" class="enviar">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+    
+                <tr>
+                    <td>Miércoles</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+    
+                <tr>
+                    <td>Viernes</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+            </tbody>
+
+
+        </table>
+    </main>
+
+    <footer id="footer1">
+        <h2>
+            <img id="logoFooter" src="./imagenes/logo-blanco.png" alt="logoFooter">
+        </h2>
+        <p class="copyright">&copy Copyright BarberShop - 2023</p>
+    </footer>
+    
+</body>
+</html> 
